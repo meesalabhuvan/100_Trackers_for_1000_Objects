@@ -7,7 +7,6 @@
 This dataset contains **1000 Low Earth Orbit (LEO) space objects** represented using **Two-Line Element (TLE)** data, formatted as a CSV file for easy ingestion into analysis and simulation tools.
 The dataset is designed to support **Space Situational Awareness (SSA)** studies involving **100 independent trackers monitoring 1000 orbiting objects**.
 
----
 
 ### Dataset Description
                                                                                                                                    ### Needed more computational power CPU to run this 
@@ -19,7 +18,6 @@ The dataset is designed to support **Space Situational Awareness (SSA)** studies
 * **TLE format:** Standard NORAD Two-Line Element set
 * **File format:** CSV
 
----
 
 ### CSV File Structure
 
@@ -37,7 +35,7 @@ csvNORAD_ID,TLE_LINE1,TLE_LINE2
 | TLE_LINE1   | First line of the TLE                              |
 | TLE_LINE2   | Second line of the TLE                             |
 
----
+
 
 ### 100 Trackers – Concept of Operations (CONOPS)
 
@@ -66,7 +64,7 @@ Each tracker can be configured with:
 * Range, elevation, and illumination constraints
 * Revisit and detection thresholds
 
----
+
 
 ### Supported Tools
 
@@ -79,7 +77,7 @@ This dataset is compatible with:
 * **MATLAB**
 * **Custom SSA simulation frameworks**
 
----
+
 
 ### Intended Use Cases
 
@@ -90,7 +88,7 @@ This dataset is compatible with:
 * Academic projects and demonstrations
 * Interview assignments and technical assessments
 
----
+
 
 ### Notes & Limitations
 
@@ -98,23 +96,3 @@ This dataset is compatible with:
 * Not intended to represent real, cataloged objects
 * Drag, maneuvering, and fragmentation events are not modeled unless explicitly added
 * Checksum values are not enforced unless required by the target tool
-
----
-
-### Recommended Extensions
-
-* Add tracker metadata (location, type, FOV)
-* Introduce time-offset epochs
-* Inject measurement noise and missed detections
-* Scale to 10,000+ objects for stress testing
-* Integrate conjunction probability calculations
-
-
-
-
-
-* write a **paper-style CONOPS section**
-* create a **tracker configuration README**
-* generate **STK / Python scripts** to run the 100×1000 scenario
-
-Just tell me what you want next.
